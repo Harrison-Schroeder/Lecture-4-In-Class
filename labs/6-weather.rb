@@ -32,12 +32,53 @@ weather_data = {
 }
 
 puts "Currently it is #{weather_data[:current][:temperature]} and #{weather_data[:current][:conditions]}"
-puts "Forecast for the next 7 days
-#{weather_data[:forecast][0][:temperature]} and #{weather_data[:forecast][0][:conditions]} with a #{weather_data[:forecast][0][:precipitation]*100} chance of rain
-#{weather_data[:forecast][1][:temperature]} and #{weather_data[:forecast][1][:conditions]} with a #{weather_data[:forecast][1][:precipitation]*100} chance of rain
-#{weather_data[:forecast][2][:temperature]} and #{weather_data[:forecast][2][:conditions]} with a #{weather_data[:forecast][2][:precipitation]*100} chance of rain
-#{weather_data[:forecast][3][:temperature]} and #{weather_data[:forecast][3][:conditions]} with a #{weather_data[:forecast][3][:precipitation]*100} chance of rain
-#{weather_data[:forecast][4][:temperature]} and #{weather_data[:forecast][4][:conditions]} with a #{weather_data[:forecast][4][:precipitation]*100} chance of rain
-#{weather_data[:forecast][5][:temperature]} and #{weather_data[:forecast][5][:conditions]} with a #{weather_data[:forecast][5][:precipitation]*100} chance of rain
-#{weather_data[:forecast][6][:temperature]} and #{weather_data[:forecast][6][:conditions]} with a #{weather_data[:forecast][6][:precipitation]*100} chance of rain
-"
+puts "Forecast for the next 7 days"
+if weather_data[:forecast][0][:precipitation] > 0.50 && weather_data[:forecast][0][:conditions] =="Rainy"
+  puts "#{weather_data[:forecast][0][:temperature]} and #{weather_data[:forecast][0][:conditions]}"
+elsif weather_data[:forecast][0][:precipitation] > 0.5 && weather_data[:forecast][0][:conditions] != "Rainy"
+  puts "#{weather_data[:forecast][0][:temperature]} and #{weather_data[:forecast][0][:conditions]} with a #{weather_data[:forecast][0][:precipitation]*100} chance of rain"
+else 
+  puts "#{weather_data[:forecast][0][:temperature]} and #{weather_data[:forecast][0][:conditions]}"
+end
+if weather_data[:forecast][1][:precipitation] > 0.50 && weather_data[:forecast][1][:conditions] =="Rainy"
+  puts "#{weather_data[:forecast][1][:temperature]} and #{weather_data[:forecast][1][:conditions]}"
+elsif weather_data[:forecast][1][:precipitation] > 0.5 && weather_data[:forecast][1][:conditions] != "Rainy"
+  puts "#{weather_data[:forecast][1][:temperature]} and #{weather_data[:forecast][1][:conditions]} with a #{weather_data[:forecast][1][:precipitation]*100} chance of rain"
+else 
+  puts "#{weather_data[:forecast][1][:temperature]} and #{weather_data[:forecast][1][:conditions]}"
+end
+if weather_data[:forecast][2][:precipitation] > 0.50 && weather_data[:forecast][2][:conditions] =="Rainy"
+  puts "#{weather_data[:forecast][2][:temperature]} and #{weather_data[:forecast][2][:conditions]}"
+elsif weather_data[:forecast][2][:precipitation] > 0.5 && weather_data[:forecast][2][:conditions] != "Rainy"
+  puts "#{weather_data[:forecast][2][:temperature]} and #{weather_data[:forecast][2][:conditions]} with a #{weather_data[:forecast][2][:precipitation]*100} chance of rain"
+else 
+  puts "#{weather_data[:forecast][2][:temperature]} and #{weather_data[:forecast][2][:conditions]}"
+end
+if weather_data[:forecast][3][:precipitation] > 0.50 && weather_data[:forecast][3][:conditions] =="Rainy"
+  puts "#{weather_data[:forecast][3][:temperature]} and #{weather_data[:forecast][3][:conditions]}"
+elsif weather_data[:forecast][3][:precipitation] > 0.5 && weather_data[:forecast][3][:conditions] != "Rainy"
+  puts "#{weather_data[:forecast][3][:temperature]} and #{weather_data[:forecast][3][:conditions]} with a #{weather_data[:forecast][3][:precipitation]*100} chance of rain"
+else 
+  puts "#{weather_data[:forecast][3][:temperature]} and #{weather_data[:forecast][3][:conditions]}"
+end
+if weather_data[:forecast][4][:precipitation] > 0.50 && weather_data[:forecast][4][:conditions] =="Rainy"
+  puts "#{weather_data[:forecast][4][:temperature]} and #{weather_data[:forecast][4][:conditions]}"
+elsif weather_data[:forecast][4][:precipitation] > 0.5 && weather_data[:forecast][4][:conditions] != "Rainy"
+  puts "#{weather_data[:forecast][4][:temperature]} and #{weather_data[:forecast][4][:conditions]} with a #{weather_data[:forecast][4][:precipitation]*100} chance of rain"
+else 
+  puts "#{weather_data[:forecast][4][:temperature]} and #{weather_data[:forecast][4][:conditions]}"
+end
+if weather_data[:forecast][5][:precipitation] > 0.50 && weather_data[:forecast][5][:conditions] =="Rainy"
+  puts "#{weather_data[:forecast][5][:temperature]} and #{weather_data[:forecast][5][:conditions]}"
+elsif weather_data[:forecast][5][:precipitation] > 0.5 && weather_data[:forecast][5][:conditions] != "Rainy"
+  puts "#{weather_data[:forecast][5][:temperature]} and #{weather_data[:forecast][5][:conditions]} with a #{weather_data[:forecast][5][:precipitation]*100} chance of rain"
+else 
+  puts "#{weather_data[:forecast][5][:temperature]} and #{weather_data[:forecast][5][:conditions]}"
+end
+if weather_data[:forecast][6][:precipitation] > 0.50 && weather_data[:forecast][6][:conditions] =="Rainy"
+  puts "#{weather_data[:forecast][6][:temperature]} and #{weather_data[:forecast][6][:conditions]}"
+elsif weather_data[:forecast][6][:precipitation] > 0.5 && weather_data[:forecast][6][:conditions] != "Rainy"
+  puts "#{weather_data[:forecast][6][:temperature]} and #{weather_data[:forecast][6][:conditions]} with a #{weather_data[:forecast][6][:precipitation]*100} chance of rain"
+else 
+  puts "#{weather_data[:forecast][6][:temperature]} and #{weather_data[:forecast][6][:conditions]}"
+end
